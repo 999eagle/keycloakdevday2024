@@ -1,0 +1,33 @@
+\definecolor{ozean}{RGB}{31,58,146}
+\definecolor{pool}{RGB}{53,181,252}
+\definecolor{minze}{RGB}{195,222,214}
+\definecolor{tanne}{RGB}{30,73,60}
+\definecolor{pfirsich}{RGB}{255,146,72}
+\definecolor{zimt}{RGB}{151,52,6}
+\definecolor{petrol}{RGB}{235,107,103}
+\definecolor{koralle}{RGB}{235,107,103}
+
+\definecolor{white}{RGB}{255,255,255}
+
+\renewcommand{\beamerbgcolor}{ozean}
+\renewcommand{\beamertitlecolor}{pfirsich}
+\renewcommand{\beamertextcolor}{white}
+\renewcommand{\beamerfootertextcolor}{white}
+
+\usepackage{fontspec}
+\renewfontfamily\sffamily{OpenSans}[
+	Path=fonts/,
+	Extension=.ttf,
+	UprightFont=*-Regular,
+	BoldFont=*-Bold,
+	ItalicFont=*-Italic,
+	BoldItalicFont=*-BoldItalic
+]
+\newfontfamily\titlefamily{Ranga}[
+	Path=fonts/,
+	Extension=.ttf,
+	UprightFont=*-Regular,
+	BoldFont=*-Bold
+]
+\setbeamerfont{all titles}{family=\titlefamily, series=\bfseries}
+\setbeamerfont{title}{parent=all titles, size=\Large}
