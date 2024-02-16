@@ -1,0 +1,13 @@
+stages:
+  - build
+
+build:
+  stage: build
+  image: nixos/nix
+  script:
+    - nix build --extra-experimental-features "nix-command flakes"
+    - cp result/* .
+  artifacts:
+    expire_in: 1h
+    paths:
+      - slides.pdf
